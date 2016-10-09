@@ -64,10 +64,7 @@ font_src_files += \
 endif # !MINIMAL_FONT
 
 # Add custom fonts.xml
-#$(eval $(call add-prebuilt-files, $(PRODUCT_OUT)/system/etc/, fonts.xml))
-
-PRODUCT_COPY_FILES += \
-    external/boon-fonts/fonts.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/fonts.xml
+$(eval $(call add-prebuilt-files, $(PRODUCT_OUT)/system/etc/, $(LOCAL_PATH)/fonts.xml))
 
 $(foreach f, $(font_src_files), $(call build-one-font-module, $(f)))
 

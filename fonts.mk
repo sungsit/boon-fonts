@@ -4,9 +4,6 @@
 # This license is copied below, and is also available with a FAQ at:
 # http://scripts.sil.org/OFL
 
-PRODUCT_COPY_FILES := \
-    external/boon-fonts/fonts.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/fonts.xml
-
 PRODUCT_PACKAGES := \
     Boon-Regular.ttf \
     Boon-Bold.ttf \

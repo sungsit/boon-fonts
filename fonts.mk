@@ -5,7 +5,7 @@
 # http://scripts.sil.org/OFL
 
 PRODUCT_COPY_FILES := \
-    boon-fonts/fonts.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/fonts.xml
+    external/boon-fonts/fonts.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/fonts.xml
 
 PRODUCT_PACKAGES := \
     Boon-Regular.ttf \

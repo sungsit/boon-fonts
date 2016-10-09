@@ -52,6 +52,9 @@ $(eval $(call create-font-symlink,Boon-LightItalic.ttf,Boon-Italic.ttf))
 $(eval $(call create-font-symlink,Boon-Medium.ttf,Boon-Regular.ttf))
 $(eval $(call create-font-symlink,Boon-MediumItalic.ttf,Boon-Italic.ttf))
 
+# Add custom fonts.xml
+$(eval $(call add-prebuilt-files, $(PRODUCT_OUT)/system/etc/, fonts.xml))
+
 else # !MINIMAL_FONT
 font_src_files += \
     Boon-SemiBold.ttf \
